@@ -1,0 +1,20 @@
+{
+  "name": "Walmart Data Pipeline",
+  "dockerFile": "../Dockerfile",           // Chỉ đường đến file Dockerfile gốc
+  "context": "..",                         // Cho phép build từ thư mục chính
+  "workspaceFolder": "/app",
+  "runArgs": ["--env-file", ".env", "-v", "${localWorkspaceFolder}/data:/app/data"],
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "remoteEnv": {
+    "PYTHONPATH": "/app"
+  }
+}

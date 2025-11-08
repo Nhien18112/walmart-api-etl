@@ -1,0 +1,19 @@
+# === Bỏ qua dữ liệu và tệp môi trường nhạy cảm ===
+data/
+.env
+__pycache__/
+*.pyc
+
+# === Bỏ qua thư mục ảo Python ===
+venv/
+.env/
+*.egg-info/
+*.log
+
+# === Bỏ qua các file hệ thống và VS Code ===
+.vscode/
+.devcontainer/
+.git/
+.gitignore
+.DS_Store
+Thumbs.db
