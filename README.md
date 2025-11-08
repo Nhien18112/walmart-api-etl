@@ -7,29 +7,28 @@ Bạn có thể chạy toàn bộ pipeline chỉ với **một lệnh duy nhất
 
 ## 📂 Cấu trúc thư mục
 
-WalmartAPI/
-│
+walmart-analytics/
 ├── src/
-│ ├── call_API.py # Bước 1 - Gọi API lấy dữ liệu thô
-│ ├── save_data.py # Bước 2 - Lưu dữ liệu ra CSV, JSON, Excel
-│ ├── analyze_data.py # Bước 3 - Phân tích thống kê cơ bản
-│ ├── clean_data.py # Bước 4 - Làm sạch dữ liệu
-│ ├── eda_api.py # Bước 5 - Phân tích EDA và vẽ biểu đồ
+│   ├── call_API.py        # Bước 1 - Gọi API lấy dữ liệu thô
+│   ├── save_data.py       # Bước 2 - Lưu dữ liệu ra CSV, JSON, Excel
+│   ├── analyze_data.py    # Bước 3 - Phân tích thống kê cơ bản
+│   ├── clean_data.py      # Bước 4 - Làm sạch dữ liệu
+│   └── eda_api.py         # Bước 5 - Phân tích EDA và vẽ biểu đồ
 │
 ├── data/
-│ ├── raw_data/ # Dữ liệu gốc từ API
-│ ├── save_data/ # Dữ liệu lưu lần đầu
-│ ├── clean_data/ # Dữ liệu đã làm sạch
-│ └── eda_pic/ # Hình ảnh và bảng phân tích EDA
+│   ├── raw_data/          # Dữ liệu gốc từ API
+│   ├── save_data/         # Dữ liệu lưu lần đầu
+│   ├── clean_data/        # Dữ liệu đã làm sạch
+│   └── eda_pic/           # Hình ảnh và bảng phân tích EDA
 │
-├── pipeline.py # Chạy toàn bộ 5 bước pipeline
-├── requirements.txt # Danh sách thư viện cần cài
-├── Dockerfile # Định nghĩa image Docker
-├── .dockerignore # Bỏ qua file/thư mục khi build image
-├── .env # File chứa API_KEY (bảo mật, không push)
-├── .env.example # Mẫu file .env cho người khác sử dụng
+├── pipeline.py            # Chạy toàn bộ 5 bước pipeline
+├── requirements.txt       # Danh sách thư viện cần cài
+├── Dockerfile             # Định nghĩa image Docker
+├── .dockerignore          # Bỏ qua file/thư mục khi build image
+├── .env                   # File chứa API_KEY (bảo mật, không push)
+├── .env.example           # Mẫu file .env cho người khác sử dụng
 └── .devcontainer/
-└── devcontainer.json # Cấu hình cho VS Code Dev Container
+└── devcontainer.json  # Cấu hình cho VS Code Dev Container
 
 
 ---
